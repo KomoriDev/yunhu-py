@@ -1,0 +1,27 @@
+[project]
+name = "yunhu-py"
+version = "0.1.0"
+description = "云湖 Bot Python SDK."
+authors = [
+    { name = "KomoriDev", email = "mute231010@gmail.com" },
+]
+dependencies = []
+requires-python = ">=3.8"
+readme = "README.md"
+license = { text = "MIT" }
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pre-commit>=3.5.0",
+    "black>=24.4.0",
+    "ruff>=0.4.1",
+    "isort>=5.13.2",
+]
